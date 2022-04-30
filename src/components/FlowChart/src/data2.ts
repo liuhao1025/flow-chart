@@ -63,7 +63,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '转化率 > 7.5%', fill: 'white' },
 		},
 	}),
@@ -71,7 +71,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '收藏人数 > 2000', fill: 'white' },
 		},
 	}),
@@ -79,7 +79,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '加购人数 > 50000', fill: 'white' },
 		},
 	}),
@@ -88,7 +88,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '爆款', fill: 'white' },
 		},
 	}),
@@ -96,7 +96,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '非爆款', fill: 'white' },
 		},
 	}),

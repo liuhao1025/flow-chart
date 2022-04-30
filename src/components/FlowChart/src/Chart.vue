@@ -1,6 +1,6 @@
 <template>
 	<div class="flex">
-		<div class="left" ref="leftDomRef">LeftBar</div>
+		<div class="left" ref="leftDomRef"></div>
 		<div class="content" ref="domRef">Content</div>
 	</div>
 </template>
@@ -9,9 +9,19 @@ import { Graph, Addon, Shape } from '@antv/x6';
 import { DagreLayout } from '@antv/layout';
 import { onMounted, ref } from 'vue';
 
-// import { chart as data, options } from './data1';
-// import { chart as data, options } from './data2';
-import { chart as data, options } from './data3';
+import { chart as data1, options as options1 } from './data1';
+import { chart as data2, options as options2 } from './data2';
+import { chart as data3, options as options3 } from './data3';
+
+const dataArr = [data1, data2, data3];
+const optionArr = [options1, options2, options3];
+const props = defineProps({
+	dataIndex: {
+		type: Number,
+	},
+});
+
+const [data, options] = [dataArr[props.dataIndex], optionArr[props.dataIndex]];
 
 const baseWidth = 140;
 const baseHeight = 40;
@@ -62,7 +72,6 @@ onMounted(() => {
 		container: domRef.value,
 		grid: {
 			size: 10,
-			visible: true,
 		},
 		embedding: {
 			enabled: true,
@@ -106,14 +115,13 @@ onMounted(() => {
 	});
 
 	const stencil = new Addon.Stencil({
-		title: '条件',
 		target: graph,
 		stencilGraphWidth: 320,
 		stencilGraphHeight: options.length * 60,
 		groups: [
 			{
 				name: 'group1',
-				title: '条件',
+				title: '',
 				collapsable: false,
 			},
 		],
@@ -137,9 +145,18 @@ onMounted(() => {
 .left {
 	position: relative;
 	width: 320px;
+	background-color: rgba(255, 255, 255, 0.15);
 }
 
 .content {
 	flex: 1;
+}
+
+.x6-widget-stencil {
+	background: transparent;
+}
+.x6-widget-stencil-title,
+.x6-widget-stencil-group-title {
+	display: none;
 }
 </style>

@@ -1,9 +1,9 @@
 <script setup>
-import { FlowChart } from './components/FlowChart';
+import Main from './Main.vue';
 </script>
 
 <template>
-	<FlowChart></FlowChart>
+	<Main></Main>
 </template>
 
 <style>

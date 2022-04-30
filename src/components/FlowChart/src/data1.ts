@@ -11,7 +11,7 @@ export const chart = {
 			label: '开始',
 		},
 		{
-			id: 'condition',
+			id: 'condition-1',
 			type: 'rect',
 			width: 140,
 			height: 40,
@@ -21,7 +21,7 @@ export const chart = {
 			},
 		},
 		{
-			id: 'result1',
+			id: 'result-1',
 			type: 'rect',
 			width: 140,
 			height: 40,
@@ -31,7 +31,7 @@ export const chart = {
 			},
 		},
 		{
-			id: 'result2',
+			id: 'result-2',
 			type: 'rect',
 			width: 140,
 			height: 40,
@@ -44,16 +44,16 @@ export const chart = {
 	edges: [
 		{
 			source: 'start',
-			target: 'condition',
+			target: 'condition-1',
 		},
 		{
-			source: 'condition',
-			target: 'result1',
+			source: 'condition-1',
+			target: 'result-1',
 			label: '成立',
 		},
 		{
-			source: 'condition',
-			target: 'result2',
+			source: 'condition-1',
+			target: 'result-2',
 			label: '不成立',
 		},
 	],
@@ -63,7 +63,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '转化率 > 7.5%', fill: 'white' },
 		},
 	}),
@@ -71,7 +71,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '爆款', fill: 'white' },
 		},
 	}),
@@ -79,7 +79,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '非爆款', fill: 'white' },
 		},
 	}),

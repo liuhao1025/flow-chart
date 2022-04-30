@@ -93,7 +93,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '转化率 > 7.5%', fill: 'white' },
 		},
 	}),
@@ -101,7 +101,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '转化率 > 4.5%', fill: 'white' },
 		},
 	}),
@@ -109,7 +109,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '其他', fill: 'white' },
 		},
 	}),
@@ -117,7 +117,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '爆款', fill: 'white' },
 		},
 	}),
@@ -125,7 +125,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '潜力款', fill: 'white' },
 		},
 	}),
@@ -133,7 +133,7 @@ export const options = [
 		width: 140,
 		height: 40,
 		attrs: {
-			rect: { fill: '#31D0C6', stroke: '#4B4A67' },
+			rect: { fill: '#3498db', stroke: '#2980b9' },
 			text: { text: '正常款', fill: 'white' },
 		},
 	}),
